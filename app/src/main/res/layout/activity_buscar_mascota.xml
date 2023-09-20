@@ -39,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:background="@drawable/botonborders"
             android:backgroundTint="@null"
             android:text="Search" />
@@ -48,7 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:background="@drawable/botonborders"
             android:backgroundTint="@null"
             android:text="Clean" />
@@ -56,53 +56,71 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/etbuscartipo"
+        android:id="@+id/ettipomascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:hint="Tipo" />
 
     <EditText
-        android:id="@+id/etbuscartipo5"
+        android:id="@+id/etrazamascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Raza" />
 
     <EditText
-        android:id="@+id/etbuscartipo4"
+        android:id="@+id/etnombremascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre" />
 
     <EditText
-        android:id="@+id/etbuscartipo3"
+        android:id="@+id/etpesomascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="number"
         android:hint="Peso" />
 
     <EditText
-        android:id="@+id/etbuscartipo2"
+        android:id="@+id/etcolormascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Color" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btactualizarmascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
+
+
         android:background="@drawable/botonborders"
         android:backgroundTint="@null"
+        android:textSize="20dp"
         android:text="Actualizar datos" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bteliminarmascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/botonborders"
 
         android:backgroundTint="#E84444"
+        android:textSize="20dp"
         android:text="Eliminar Mascota"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btabriActivityRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/botonborders"
+
+        android:backgroundTint="@color/black"
+        android:text="Agregar mascotas"
+
+        android:textSize="20dp"
         app:backgroundTint="@null" />
 </LinearLayout>

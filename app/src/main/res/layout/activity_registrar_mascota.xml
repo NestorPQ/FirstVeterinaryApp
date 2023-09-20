@@ -20,12 +20,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Datos de la mascota:"
-        android:textSize="25dp" />
+        android:textSize="35dp" />
 
     <EditText
         android:id="@+id/ettipomascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:hint="Tipo" />
 
     <EditText
@@ -60,15 +61,18 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/botonborders"
         android:backgroundTint="@null"
+        android:textSize="25dp"
         android:text="REGISTRAR MASCOTA" />
 
     <Button
         android:id="@+id/btabribuscador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/botonborders"
-        android:backgroundTint="@null"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnborderblack"
+        app:backgroundTint="@null"
+
+        android:textSize="25dp"
         android:text="BUSCAR MASCOTA" />
 
 </LinearLayout>

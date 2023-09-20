@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ScaleGestureDetector;
 import android.database.sqlite.SQLiteDatabase;
@@ -35,7 +36,7 @@ public class registrarMascota extends AppCompatActivity {
         btabrirbuscador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getApplicationContext(),buscar_mascota.class));
             }
         });
 
@@ -123,8 +124,8 @@ public class registrarMascota extends AppCompatActivity {
         etcolor = findViewById(R.id.etcolor);
 
 
-        btabrirbuscador = findViewById(R.id.btregistrarmascotaa);
-        btRegistrarMascota = findViewById(R.id.btabribuscador);
+        btabrirbuscador = findViewById(R.id.btabribuscador);
+        btRegistrarMascota = findViewById(R.id.btregistrarmascotaa);
 
 
     }
