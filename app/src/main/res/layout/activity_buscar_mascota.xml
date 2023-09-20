@@ -29,6 +29,7 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/etIdBucar"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="5dp"
@@ -36,6 +37,7 @@
             android:inputType="number" />
 
         <Button
+            android:id="@+id/btBuscarMascota"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -45,6 +47,7 @@
             android:text="Search" />
 
         <Button
+            android:id="@+id/btLimpiarCampos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -56,33 +59,33 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/ettipomascota"
+        android:id="@+id/etTipoMascotaBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:hint="Tipo" />
 
     <EditText
-        android:id="@+id/etrazamascota"
+        android:id="@+id/etRazaMascotaBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Raza" />
 
     <EditText
-        android:id="@+id/etnombremascota"
+        android:id="@+id/etNombreMascotaBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre" />
 
     <EditText
-        android:id="@+id/etpesomascota"
+        android:id="@+id/etPesoMascotaBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Peso" />
 
     <EditText
-        android:id="@+id/etcolormascota"
+        android:id="@+id/etColorMascotaBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Color" />

@@ -19,6 +19,8 @@ public class conexionSQLiteHelper extends SQLiteOpenHelper {
             "PRIMARY KEY ('idmascota' AUTOINCREMENT)"+
             ")";
 
+
+
     public conexionSQLiteHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
@@ -31,5 +33,6 @@ public class conexionSQLiteHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS mascotas");
+        onCreate(sqLiteDatabase);
     }
 }

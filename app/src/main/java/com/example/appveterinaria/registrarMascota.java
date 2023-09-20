@@ -4,12 +4,14 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ScaleGestureDetector;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -82,6 +84,8 @@ public class registrarMascota extends AppCompatActivity {
 
             }
         });
+
+        dialogo.show();
     }
 
     private void registrarMascota(){
@@ -102,6 +106,10 @@ public class registrarMascota extends AppCompatActivity {
         notificar("Datos guardados correctamente = " + String.valueOf(idObtenido));
         reiniciar();
         etraza.requestFocus();
+
+        // Ocultar el teclado virtual
+        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(ettipo.getWindowToken(), 0);
 
     }
 
@@ -124,8 +132,9 @@ public class registrarMascota extends AppCompatActivity {
         etcolor = findViewById(R.id.etcolor);
 
 
-        btabrirbuscador = findViewById(R.id.btabribuscador);
         btRegistrarMascota = findViewById(R.id.btregistrarmascotaa);
+        btabrirbuscador = findViewById(R.id.btabribuscador);
+
 
 
     }
