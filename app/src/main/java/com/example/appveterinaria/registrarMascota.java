@@ -20,7 +20,7 @@ public class registrarMascota extends AppCompatActivity {
 
     EditText ettipo, etraza, etnombre, etpeso, etcolor;
 
-    Button btRegistrarMascota, btabrirbuscador;
+    Button btRegistrarMascota, btabrirbuscador, menuprincipal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,13 @@ public class registrarMascota extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),buscar_mascota.class));
+            }
+        });
+
+        menuprincipal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
             }
         });
 
@@ -89,7 +96,7 @@ public class registrarMascota extends AppCompatActivity {
     }
 
     private void registrarMascota(){
-        conexionSQLiteHelper conexion = new conexionSQLiteHelper(this, "bdmascotas", null, 1);
+        conexionSQLiteHelper conexion = new conexionSQLiteHelper(this, "veterinaria", null, 1);
 
         SQLiteDatabase db = conexion.getWritableDatabase();
 
@@ -134,6 +141,7 @@ public class registrarMascota extends AppCompatActivity {
 
         btRegistrarMascota = findViewById(R.id.btregistrarmascotaa);
         btabrirbuscador = findViewById(R.id.btabribuscador);
+        menuprincipal = findViewById(R.id.btMasMenuPrincipal);
 
 
 

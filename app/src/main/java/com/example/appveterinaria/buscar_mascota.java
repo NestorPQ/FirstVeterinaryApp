@@ -33,7 +33,7 @@ public class buscar_mascota extends AppCompatActivity {
         loadUI();
 
         //  Abrimos la conexion
-        conexion = new conexionSQLiteHelper(getApplicationContext(),"bdmascotas", null,1);
+        conexion = new conexionSQLiteHelper(getApplicationContext(),"veterinaria", null,1);
 
         btBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -187,7 +187,8 @@ public class buscar_mascota extends AppCompatActivity {
         if (filasActualizadas > 0){
             notificar("Datos Actualizados con éxito");
             reiniciar();
-        }else {notificar("Error al actualizar los datos");}
+        }else {notificar("Error al actualizar los datos");
+        }
     }
 
 

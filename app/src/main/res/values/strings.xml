@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AppVeterinaria</string>
+
+    <!-- Cadenas predeterminadas no tocar 😎 -->
+    <string name="name">Nombre</string>
+    <string name="message">Mensaje</string>
+    <string name="phone">Celular</string>
+    <string name="email">Correo</string>
+    <string name="done">Listos</string>
+    <string name="check">Verificar</string>
 </resources>

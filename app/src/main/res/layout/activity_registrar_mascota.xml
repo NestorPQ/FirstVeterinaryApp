@@ -75,4 +75,16 @@
         android:textSize="25dp"
         android:text="BUSCAR MASCOTA" />
 
+    <Button
+        android:id="@+id/btMasMenuPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnborderblack"
+        android:text="VOLVER AL MENU PRINCIPAL"
+
+        android:textSize="20dp"
+        app:backgroundTint="@null"
+        android:backgroundTint="@color/material_dynamic_neutral60"/>
+
 </LinearLayout>
