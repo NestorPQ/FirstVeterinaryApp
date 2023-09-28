@@ -11,15 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="35dp"
-
         android:layout_marginLeft="16dp"
+
+        android:layout_marginTop="35dp"
         android:layout_marginRight="16dp"
-        
+
         android:layout_marginBottom="15dp"
         android:text="Registros de clientes"
         android:textAlignment="center"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -34,8 +34,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etapellidocliente"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:inputType="text" />
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textSize="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -51,8 +52,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etnombrecliente"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:inputType="text" />
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textSize="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -68,8 +70,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ettelefonocliente"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:inputType="number" />
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:textSize="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -84,8 +87,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etemailcliente"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:inputType="textWebEmailAddress" />
+            android:layout_height="50dp"
+            android:inputType="textWebEmailAddress"
+            android:textSize="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -101,7 +105,8 @@
             android:id="@+id/etdireccioncliente"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textSize="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -118,8 +123,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etBuscarFecarNacCliente"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:inputType="text" />
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textSize="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -132,6 +138,18 @@
         android:background="@drawable/style_rounded_button"
         android:text="Registrar Cliente"
         android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAbrirListaClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="?android:attr/scrollbarThumbHorizontal"
+        android:text="Lista de Clientes"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <LinearLayout

@@ -19,7 +19,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class registroCliente extends AppCompatActivity {
 
    TextInputEditText etApellido, etNombre, etTelefono, etEmail, etDireccion, etFechaNacimienotCliente;
-   Button btRegresarMenu, btBuscarCliente, btRegistrarCliente;
+   Button btRegresarMenu, btBuscarCliente, btRegistrarCliente, btnListaClienteOpen;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,13 @@ public class registroCliente extends AppCompatActivity {
          @Override
          public void onClick(View view) {
             validarCampo();
+         }
+      });
+
+      btnListaClienteOpen.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+            startActivity(new Intent(getApplicationContext(),listar_cliente.class));
          }
       });
 
@@ -145,5 +152,6 @@ public class registroCliente extends AppCompatActivity {
       btBuscarCliente = findViewById(R.id.btnEliminarCliente);
       btRegresarMenu = findViewById(R.id.btnActualizarCliente);
       btRegistrarCliente = findViewById(R.id.btnMenuRegistrarCliente);
+      btnListaClienteOpen = findViewById(R.id.btnAbrirListaClientes);
    }
 }

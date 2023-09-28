@@ -76,15 +76,27 @@
         android:text="BUSCAR MASCOTA" />
 
     <Button
-        android:id="@+id/btMasMenuPrincipal"
+        android:id="@+id/btMasMenuPrincipal2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/btnborderblack"
-        android:text="VOLVER AL MENU PRINCIPAL"
+        android:backgroundTint="@color/material_dynamic_neutral60"
 
+        android:text="VOLVER AL MENU PRINCIPAL"
         android:textSize="20dp"
-        app:backgroundTint="@null"
-        android:backgroundTint="@color/material_dynamic_neutral60"/>
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btlistamascotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnborderblack"
+        android:backgroundTint="@color/celeste"
+
+        android:text="LISTA DE MASCOTAS"
+        android:textSize="20dp"
+        app:backgroundTint="@null" />
 
 </LinearLayout>

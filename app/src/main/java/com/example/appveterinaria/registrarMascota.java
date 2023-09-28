@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.ScaleGestureDetector;
 import android.database.sqlite.SQLiteDatabase;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -20,7 +19,7 @@ public class registrarMascota extends AppCompatActivity {
 
     EditText ettipo, etraza, etnombre, etpeso, etcolor;
 
-    Button btRegistrarMascota, btabrirbuscador, menuprincipal;
+    Button btRegistrarMascota, btabrirbuscador, menuprincipal, btListaMascotas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +45,13 @@ public class registrarMascota extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            }
+        });
+
+        btListaMascotas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), listar_macotas.class));
             }
         });
 
@@ -141,7 +147,9 @@ public class registrarMascota extends AppCompatActivity {
 
         btRegistrarMascota = findViewById(R.id.btregistrarmascotaa);
         btabrirbuscador = findViewById(R.id.btabribuscador);
-        menuprincipal = findViewById(R.id.btMasMenuPrincipal);
+        menuprincipal = findViewById(R.id.btMasMenuPrincipal2);
+
+        btListaMascotas = findViewById(R.id.btlistamascotas);
 
 
 
