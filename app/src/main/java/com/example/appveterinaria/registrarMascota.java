@@ -148,7 +148,6 @@ public class registrarMascota extends AppCompatActivity {
         btRegistrarMascota = findViewById(R.id.btregistrarmascotaa);
         btabrirbuscador = findViewById(R.id.btabribuscador);
         menuprincipal = findViewById(R.id.btMasMenuPrincipal2);
-
         btListaMascotas = findViewById(R.id.btlistamascotas);
 
 

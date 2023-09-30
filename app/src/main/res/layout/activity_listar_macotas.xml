@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="15dp"
+    android:padding="16dp"
     tools:context=".listar_macotas">
 
     <TextView
@@ -13,10 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Lista de mascotas"
-        android:textSize="20dp" />
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <ListView
+        android:layout_marginTop="30dp"
         android:id="@+id/lvRegistrosMascotas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:divider="#0B5791"
+        android:dividerHeight="2dp"
+        android:choiceMode="multipleChoice"
+        android:fastScrollEnabled="true"
+        />
 </LinearLayout>

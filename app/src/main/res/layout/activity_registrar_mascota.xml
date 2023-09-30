@@ -58,10 +58,10 @@
         android:id="@+id/btregistrarmascotaa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/botonborders"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btnborderblack"
         android:backgroundTint="@null"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:text="REGISTRAR MASCOTA" />
 
     <Button
@@ -72,7 +72,7 @@
         android:background="@drawable/btnborderblack"
         app:backgroundTint="@null"
 
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:text="BUSCAR MASCOTA" />
 
     <Button
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/btnborderblack"
-        android:backgroundTint="@color/material_dynamic_neutral60"
+        android:backgroundTint="#95989A"
 
         android:text="VOLVER AL MENU PRINCIPAL"
         android:textSize="20dp"
